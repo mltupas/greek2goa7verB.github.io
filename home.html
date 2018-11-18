@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!-- saved from url=(0069)file:///C:/Users/Mark/Documents/COGS120/Cogs%20120%20Main%20Page.html -->
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Login Page</title>
+		<meta name="author" content="">
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="./css/homepage.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<div id="logo">
+			<img src="images/greek2gofinal.png">
+	    </div>
+
+		<div id="boxes">
+			<img src="images/step1.png" class="image">
+			<img src="images/step2.png" class="image">
+			<img src="images/step3.png" class="image">
+		</div>
+
+		<form name="login" onsubmit="return validate()" action="events.html" method="get">
+			<div class="login">
+				Email<input type="text" id="email" required/>
+				Password<input type="text" name="pswd" id="pswd" required/>
+				<button type="submit">Login</button>
+
+				<div class="links">
+					<a href="index.html" id="createstudentacc">Create Student Account</a>
+					<a href="forgot_password.html" id="forgotpassword">Forgot Password?</a>
+				</div>
+			</div>
+		</form>
+
+	    <script src="https://code.jquery.com/jquery.js"></script>
+		<script src="js/login.js"></script>
+	    <script src="js/bootstrap.min.js"></script>
+	    <script src="js/questionnaire.js"></script>
+	    <script src="js/greek2go.js"></script>
+
+	</body>
+</html>

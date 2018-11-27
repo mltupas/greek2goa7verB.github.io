@@ -9,10 +9,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
-  <body>
+  <!-- NOTE: Menu & Back Buttons moved outside of body -->
     <div id="main">
-      <button class="openbtn" onclick="openNav()">☰ Settings</button>
+      <button class="openbtn" onclick="openNav()">☰ Menu</button>
+      <button class="openbtn" onclick="goBack()">Go Back</button>
     </div>
+
+  <body>
 
     <div class="container">
       <h1>Questionnaire</h1>
@@ -20,12 +23,10 @@
 
       <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-<!--
         <a href="events.html"><i class="fa fa-fw fa-home"></i>Home</a>
         <a href="profile.html"><i class="fa fa-fw fa-user-circle-o"></i>Profile</a>
         <a href="explore.html"><i class="fa fa-fw fa-search"></i>Explore</a>
         <a href="questionnaire.html"><i class="fa fa-fw fa-refresh"></i>Retake Questionnaire</a>
--->
         <!--<a href="#"><i class="fa fa-fw fa-heart"></i>Favorites</a>-->
         <a href="home.html"><i class="fa fa-fw fa-sign-out"></i>Logout</a>
       </div>
@@ -38,7 +39,7 @@
         <h3>Scale: 1 = Not at all, 2 = Very little, 3 = Somewhat, 4 = Very much, 5 = Completely</h3>
 
         <div class="attribute" id="academics-number">
-          <span style="color:black;font-weight:bold"><u>Academics:</u></span>
+          <span style="color:white;font-weight:bold"><u>Academics:</u></span>
           <span>Grades, Homework</span>
           <button type="button" class="academics-number-button">1</button>
           <button type="button" class="academics-number-button">2</button>
@@ -48,7 +49,7 @@
         </div>
 
         <div class="attribute" id="athletics-number">
-          <span style="color:black;font-weight:bold"><u>Athletics:</u></span>
+          <span style="color:white;font-weight:bold"><u>Athletics:</u></span>
           <span>Sports, Exercise</span>
           <button type="button" class="athletics-number-button">1</button>
           <button type="button" class="athletics-number-button">2</button>
@@ -58,7 +59,7 @@
         </div>
 
         <div class="attribute" id="leadership-number">
-          <span style="color:black;font-weight:bold"><u>Leadership:</u></span>
+          <span style="color:white;font-weight:bold"><u>Leadership:</u></span>
           <span>Communication, Guidance</span>
           <button type="button" class="leadership-number-button">1</button>
           <button type="button" class="leadership-number-button">2</button>
@@ -68,7 +69,7 @@
         </div>
 
         <div class="attribute" id="social-number">
-          <span style="color:black;font-weight:bold"><u>Social:</u></span>
+          <span style="color:white;font-weight:bold"><u>Social:</u></span>
           <span>Hangouts, Parties</span>
           <button type="button" class="social-number-button">1</button>
           <button type="button" class="social-number-button">2</button>
@@ -78,7 +79,7 @@
         </div>
 
         <div class="attribute" id="philanthropy-number">
-          <span style="color:black;font-weight:bold"><u>Philanthropy:</u></span>
+          <span style="color:white;font-weight:bold"><u>Philanthropy:</u></span>
           <span>Volunteer, Charity</span>
           <button type="button" class="philanthropy-number-button">1</button>
           <button type="button" class="philanthropy-number-button">2</button>

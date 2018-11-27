@@ -9,10 +9,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
-  <body>
+  <!-- NOTE: Menu & Back Buttons moved outside of body -->
     <div id="main">
-      <button class="openbtn" onclick="openNav()">☰ Settings</button>
+      <button class="openbtn" onclick="openNav()">☰ Menu</button>
+      <button class="openbtn" onclick="goBack()">Go Back</button>
     </div>
+
+  <body>
 
     <div class="container">
       <h1>Explore</h1>
@@ -20,21 +23,18 @@
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
         <a href="events.html"><i class="fa fa-fw fa-home"></i>Home</a>
         <a href="profile.html"><i class="fa fa-fw fa-user-circle-o"></i>Profile</a>
-<!--
         <a href="explore.html"><i class="fa fa-fw fa-search"></i>Explore</a>
--->
         <a href="questionnaire.html"><i class="fa fa-fw fa-refresh"></i>Retake Questionnaire</a>
           <!--<a href="#"><i class="fa fa-fw fa-heart"></i>Favorites</a>-->
         <a href="home.html"><i class="fa fa-fw fa-sign-out"></i>Logout</a>
       </div>
 
-      <hr>
-      
       <div id="explore"></div>
-
+    <br>
       <form action="events.html">
         <input type="submit" value="Return to Home Page"></input>
       </form>
+    <br>
     </div>
 
     <script src="https://code.jquery.com/jquery.js"></script>

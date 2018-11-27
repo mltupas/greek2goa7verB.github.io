@@ -9,10 +9,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
+  <div id="main">
+    <button class="openbtn" onclick="openNav()">☰ Menu</button>
+    <button class="openbtn" onclick="goBack()">Go Back</button>
+  </div>
+
   <body>
-    <div id="main">
-      <button class="openbtn" onclick="openNav()">☰ Settings</button>
-    </div>
 
     <div id="mySidebar" class="sidebar">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
@@ -28,18 +30,18 @@
       <h1>Alpha Epsilon Pi</h1>
     </div>
     <div>
-      <p>Welcome to Alpha Epsilon Phi. We are a fraternity.</p>
+      <p>Alpha Epsilon Pi (AEPi) is the world’s Jewish college fraternity, operating chapters on more than 190 college campuses in seven countries. Founded in 1913, AEPi has more than 90,000 living alumni. Alpha Epsilon Pi is a Jewish fraternity and brotherhood in Alpha Epsilon Pi is open to all who are willing to espouse its values and mission. The fraternity’s mission – developing the future leaders of the Jewish communities – is demonstrated every day through acts of brotherhood, Tzedakah, social awareness and support for Jewish communities and Israel.</p>
     </div>
-
+    <hr>
     <div>
       <h3>Events</h3>
 
     </div>
 
     <div class="event_grid">
-      <table border="1">
+      <table>
         <tbody>
-          <tr>
+          <tr id="event_header">
             <td>Date</td>
             <td>Time</td>
             <td>Location</td>
@@ -56,46 +58,16 @@
             <td>09/02/18</td>
             <td>3:00-5:00 PM</td>
             <td>Triton Track & Field Stadium</td>
-            <td>Join us for a game of soccer. We'll have refreshments and towels on hand.</td>
+            <td>Soccer, flag football, and frisbee. We'll have refreshments and towels on hand.</td>
             <td><button onclick="addToCarousel(aep_r2)">Add Event</button></td>
           </tr>
           <tr id="row3">
             <td>09/03/18</td>
-            <td>6:00-7:00 PM</td>
+            <td>5:00-6:00 PM</td>
             <td>Price Center, Green Table Room</td>
             <td>Game night with the brothers. We'll have pizza and soda.</td>
             <td><button onclick="addToCarousel(aep_r3)">Add Event</button></td>
           </tr>
-<!-- NOTE: Additonal rows, may not be needed
-          <tr id="row4">
-            <td>09/04/18</td>
-            <td>6:00-7:00 PM</td>
-            <td>Mandeville Auditorium</td>
-            <td>Info night for new members</td>
-            <td><button id="add_event">Add Event</button></td>
-          </tr>
-          <tr id="row5">
-            <td>09/05/18</td>
-            <td>6:00-7:00 PM</td>
-            <td>Sun God Statue</td>
-            <td>Play a round or two of soccer with brothers</td>
-            <td><button id="add_event">Add Event</button></td>
-          </tr>
-          <tr id="row6">
-            <td>09/06/18</td>
-            <td>6:00-7:00 PM</td>
-            <td>Library Walk</td>
-            <td>Game night</td>
-            <td><button id="add_event">Add Event</button></td>
-          </tr>
-          <tr id="row7 ">
-            <td>09/07/18</td>
-            <td>6:00-7:00 PM</td>
-            <td>Student Services Building</td>
-            <td>Interview with brothers. Make sure to suit up!</td>
-            <td><button id="add_event">Add Event</button></td>
-          </tr>
--->
         </tbody>
       </table>
     </div>

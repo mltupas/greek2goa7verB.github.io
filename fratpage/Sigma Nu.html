@@ -9,11 +9,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
-  <body>
-    <div id="main">
-      <button class="openbtn" onclick="openNav()">☰ Settings</button>
-    </div>
+  <div id="main">
+    <button class="openbtn" onclick="openNav()">☰ Menu</button>
+    <button class="openbtn" onclick="goBack()">Go Back</button>
+  </div>
 
+  <body>
     <div id="mySidebar" class="sidebar">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
       <a href="../events.html"><i class="fa fa-fw fa-home"></i>Home</a>
@@ -28,42 +29,41 @@
       <h1>Sigma Nu</h1>
     </div>
     <div>
-      <p>Welcome to Sigma Nu. We are a fraternity.</p>
+      <p>Sigma Nu's Vision is Excelling with Honor, which is carried not only through our member's college careers, but their entire lives. Many of our alumni have gone on to excel with honor in their occupations and made an impact on their industry. Famous Sigma Nu alumni have included men of note in the arts, media, politics, sports, and numerous other fields.</p>
     </div>
 
     <div>
       <h3>Events</h3>
-
     </div>
 
     <div class="event_grid">
-      <table border="1">
+      <table>
         <tbody>
-          <tr>
+          <tr id="event_header">
             <td>Date</td>
             <td>Time</td>
             <td>Location</td>
             <td>Description</td>
           </tr>
           <tr id="row1">
-            <td>09/01/18</td>
-            <td>6:00-7:00 PM</td>
-            <td>Center Hall, Room 205</td>
-            <td>Come meet the brothers of Sigma Nu. Snacks and drinks provided.</td>
+            <td>09/04/18</td>
+            <td>4:00-7:00 PM</td>
+            <td>Town Park Villas Golf Course</td>
+            <td>The brothers of Sigma Nu invite you to a couple rounds of golf. We'll provide the food and drinks.</td>
             <td><button onclick="addToCarousel(sn_r1)">Add Event</button></td>
           </tr>
           <tr id="row2">
-            <td>09/02/18</td>
-            <td>3:00-5:00 PM</td>
-            <td>Triton Track & Field Stadium</td>
-            <td>Join us for a game of soccer. We'll have refreshments and towels on hand.</td>
+            <td>09/05/18</td>
+            <td>7:00-10:00 PM</td>
+            <td>Price Center, Ballroom West</td>
+            <td>Join us for a night of carnival games.</td>
             <td><button onclick="addToCarousel(sn_r2)">Add Event</button></td>
           </tr>
           <tr id="row3">
-            <td>09/03/18</td>
-            <td>6:00-7:00 PM</td>
-            <td>Price Center, Green Table Room</td>
-            <td>Game night with the brothers. We'll have pizza and soda.</td>
+            <td>09/06/18</td>
+            <td>8:00-9:00 PM</td>
+            <td>Price Center, ERC Room</td>
+            <td>Come meet our special guest speaker and find out why Sigma Nu is the right fraternity for you.</td>
             <td><button onclick="addToCarousel(sn_r3)">Add Event</button></td>
           </tr>
 <!-- NOTE: Additonal rows, may not be needed

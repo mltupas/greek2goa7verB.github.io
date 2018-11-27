@@ -9,11 +9,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
-  <body>
-    <div id="main">
-      <button class="openbtn" onclick="openNav()">☰ Settings</button>
-    </div>
+  <div id="main">
+    <button class="openbtn" onclick="openNav()">☰ Menu</button>
+    <button class="openbtn" onclick="goBack()">Go Back</button>
+  </div>
 
+  <body>
     <div id="mySidebar" class="sidebar">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
       <a href="../events.html"><i class="fa fa-fw fa-home"></i>Home</a>
@@ -33,37 +34,36 @@
 
     <div>
       <h3>Events</h3>
-
     </div>
 
     <div class="event_grid">
-      <table border="1">
+      <table>
         <tbody>
-          <tr>
+          <tr id="event_header">
             <td>Date</td>
             <td>Time</td>
             <td>Location</td>
             <td>Description</td>
           </tr>
           <tr id="row1">
-            <td>09/01/18</td>
-            <td>6:00-7:00 PM</td>
-            <td>Center Hall, Room 205</td>
-            <td>Come meet the brothers of Tau Kappa Epsilon. Snacks and drinks provided.</td>
+            <td>09/04/18</td>
+            <td>8:00-10:00 PM</td>
+            <td>Price Center Auditorium</td>
+            <td>Have a movie night with the brothers of Tau Kappa Epsilon. Popcorn, snacks, and drinks will be provided.</td>
             <td><button onclick="addToCarousel(tke_r1)">Add Event</button></td>
           </tr>
           <tr id="row2">
-            <td>09/02/18</td>
-            <td>3:00-5:00 PM</td>
+            <td>09/05/18</td>
+            <td>1:00-4:00 PM</td>
             <td>Triton Track & Field Stadium</td>
-            <td>Join us for a game of soccer. We'll have refreshments and towels on hand.</td>
+            <td>Come play a game of dodgeball with the brothers.</td>
             <td><button onclick="addToCarousel(tke_r2)">Add Event</button></td>
           </tr>
           <tr id="row3">
-            <td>09/03/18</td>
-            <td>6:00-7:00 PM</td>
-            <td>Price Center, Green Table Room</td>
-            <td>Game night with the brothers. We'll have pizza and soda.</td>
+            <td>09/06/18</td>
+            <td>5:00-6:00 PM</td>
+            <td>Price Center, Sixth College Room</td>
+            <td>Game night with the brothers. We've got prizes for everyone, whether you win or lose.</td>
             <td><button onclick="addToCarousel(tke_r3)">Add Event</button></td>
           </tr>
 <!-- NOTE: Additonal rows, may not be needed

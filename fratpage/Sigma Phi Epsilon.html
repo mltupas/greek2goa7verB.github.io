@@ -9,11 +9,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
-  <body>
-    <div id="main">
-      <button class="openbtn" onclick="openNav()">☰ Settings</button>
-    </div>
+  <div id="main">
+    <button class="openbtn" onclick="openNav()">☰ Menu</button>
+    <button class="openbtn" onclick="goBack()">Go Back</button>
+  </div>
 
+  <body>
     <div id="mySidebar" class="sidebar">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
       <a href="../events.html"><i class="fa fa-fw fa-home"></i>Home</a>
@@ -28,18 +29,17 @@
       <h1>Sigma Phi Epsilon</h1>
     </div>
     <div>
-      <p>Welcome to Sigma Phi Epsilon. We are a fraternity.</p>
+      <p>Our fraternity is redefining fraternity on college campuses across the country. We complement a man’s education by delivering a premier student experience in one of the most formative times of his life. Through SigEp, men strengthen their character, build leadership and interpersonal skills, and learn to develop healthy, lifelong relationships that are essential to a successful and fulfilling life.</p>
     </div>
 
     <div>
       <h3>Events</h3>
-
     </div>
 
     <div class="event_grid">
-      <table border="1">
+      <table>
         <tbody>
-          <tr>
+          <tr id="event_header">
             <td>Date</td>
             <td>Time</td>
             <td>Location</td>
@@ -47,23 +47,23 @@
           </tr>
           <tr id="row1">
             <td>09/01/18</td>
-            <td>6:00-7:00 PM</td>
-            <td>Center Hall, Room 205</td>
-            <td>Come meet the brothers of Sigma Phi Epsilon. Snacks and drinks provided.</td>
+            <td>7:00-10:00 PM</td>
+            <td>Mandeville Auditorium</td>
+            <td>The brothers invite you to our Greek party. We'll have food, contests, and great music.</td>
             <td><button onclick="addToCarousel(spe_r1)">Add Event</button></td>
           </tr>
           <tr id="row2">
             <td>09/02/18</td>
-            <td>3:00-5:00 PM</td>
-            <td>Triton Track & Field Stadium</td>
-            <td>Join us for a game of soccer. We'll have refreshments and towels on hand.</td>
+            <td>3:00-6:00 PM</td>
+            <td>Pacific Beach</td>
+            <td>Come meet with us at the beach for some BBQ and volleyball.</td>
             <td><button onclick="addToCarousel(spe_r2)">Add Event</button></td>
           </tr>
           <tr id="row3">
             <td>09/03/18</td>
-            <td>6:00-7:00 PM</td>
-            <td>Price Center, Green Table Room</td>
-            <td>Game night with the brothers. We'll have pizza and soda.</td>
+            <td>6:00-8:00 PM</td>
+            <td>Center Hall, Room 113</td>
+            <td>The brothers would like to invite you to our info night. Come find out what our fraternity is all about.</td>
             <td><button onclick="addToCarousel(spe_r3)">Add Event</button></td>
           </tr>
 <!-- NOTE: Additonal rows, may not be needed

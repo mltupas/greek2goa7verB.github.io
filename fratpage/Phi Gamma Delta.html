@@ -9,11 +9,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
-  <body>
-    <div id="main">
-      <button class="openbtn" onclick="openNav()">☰ Settings</button>
-    </div>
+  <div id="main">
+    <button class="openbtn" onclick="openNav()">☰ Menu</button>
+    <button class="openbtn" onclick="goBack()">Go Back</button>
+  </div>
 
+  <body>
     <div id="mySidebar" class="sidebar">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
       <a href="../events.html"><i class="fa fa-fw fa-home"></i>Home</a>
@@ -28,7 +29,7 @@
       <h1>Phi Gamma Delta</h1>
     </div>
     <div>
-      <p>Welcome to Phi Gamma Delta. We are a fraternity.</p>
+      <p>Phi Gamma Delta unites men in enduring friendships, stimulates the pursuit of knowledge, and builds courageous leaders who serve the world with the best that is in them. We have 190,000+ initiated brothers since 1848, 11,000+ undergraduate brothers in 152 Chapters, and 13 Colonies.</p>
     </div>
 
     <div>
@@ -37,9 +38,9 @@
     </div>
 
     <div class="event_grid">
-      <table border="1">
+      <table>
         <tbody>
-          <tr>
+          <tr id="event_header">
             <td>Date</td>
             <td>Time</td>
             <td>Location</td>
@@ -47,23 +48,23 @@
           </tr>
           <tr id="row1">
             <td>09/01/18</td>
-            <td>6:00-7:00 PM</td>
-            <td>Center Hall, Room 205</td>
-            <td>Come meet the brothers of Phi Gamma Delta. Snacks and drinks provided.</td>
+            <td>6:00-9:00 PM</td>
+            <td>Woo Karaoke</td>
+            <td>Come and hang out with us as we sing the night away.</td>
             <td><button onclick="addToCarousel(pgd_r1)">Add Event</button></td>
           </tr>
           <tr id="row2">
             <td>09/02/18</td>
-            <td>3:00-5:00 PM</td>
-            <td>Triton Track & Field Stadium</td>
-            <td>Join us for a game of soccer. We'll have refreshments and towels on hand.</td>
+            <td>6:00-8:00 PM</td>
+            <td>Center Hall, Room 310</td>
+            <td>Hang out with the brothers of Phi Gamma Delta and learn more about our fraternity.</td>
             <td><button onclick="addToCarousel(pgd_r2)">Add Event</button></td>
           </tr>
           <tr id="row3">
             <td>09/03/18</td>
-            <td>6:00-7:00 PM</td>
-            <td>Price Center, Green Table Room</td>
-            <td>Game night with the brothers. We'll have pizza and soda.</td>
+            <td>3:00-5:00 PM</td>
+            <td>RIMAC Arena</td>
+            <td>Basketball is the name of the game. Come and play a few rounds with us.</td>
             <td><button onclick="addToCarousel(pgd_r3)">Add Event</button></td>
           </tr>
 <!-- NOTE: Additonal rows, may not be needed

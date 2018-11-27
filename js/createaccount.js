@@ -1,28 +1,29 @@
+var profiles = JSON.parse(localStorage.getItem("profiles")) || [];
+
 function createAccount() {
-  var profile = {
+  var emailExists = false;
+  var new_user = {
     firstName: document.getElementById('first_name').value,
     lastName: document.getElementById('last_name').value,
     email: document.getElementById('new_email').value,
-    password: document.getElementById('new_pswd').value
+    password: document.getElementById('new_pswd').value,
+    events: []
   };
-  if (emailExist(profile.email)) {
-    localStorage.setItem(profile.email, JSON.stringify(profile));
-    for (var key in localStorage) {
-      console.log(key)
+
+  for (var user in profiles) {
+    if (new_user.email == profiles[user].email) {
+      emailExists = true;
     }
+  }
+
+  if (emailExists) {
+    alert("This email is already registered. Please use a different email.");
+    return false;
+  } else {
+    profiles.push(new_user);
+    localStorage.setItem("profiles", JSON.stringify(profiles));
+    localStorage.setItem("current_user", new_user.email);
+    alert("Thank you for registering.");
     return true;
   }
-  else {
-    alert('Email already registered. Please try another.');
-    return false;
-  }
-}
-
-function  emailExist(email) {
-  var check = false;
-  /*If the object does not exist, return true */
-  if (localStorage.getItem(email) == null) {
-    check = true;
-  }
-  return check;
 }

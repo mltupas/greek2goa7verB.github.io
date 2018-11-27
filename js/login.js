@@ -1,23 +1,28 @@
+var profiles = JSON.parse(localStorage.getItem("profiles"));
+
 function validate() {
-  var profile = {
+  var login = {
     email: document.getElementById('email').value,
-    pswd: document.getElementById('pswd').value
+    password: document.getElementById('pswd').value
   };
 
-  var data = JSON.parse(localStorage.getItem(profile.email));
-  console.log(data);
+  for (var user in profiles) {
+    if (login.email == profiles[user].email) {
+      if (login.password == profiles[user].password) {
+        localStorage.setItem("current_user", login.email);
+        return true;
+      } else {
+        alert("Password is incorrect. Please try again");
+        return false;
+      }
+    }
+  }
+  alert("This email is not registered. Please create an account.");
+  return false;
+}
 
-  if (data == null) {
-    alert('Email is not registered. Please create an account.');
-    return false;
-  }
-  else {
-    if (data.password != profile.pswd) {
-      alert('Password is incorrect. Please try again.')
-      return false;
-    }
-    else {
-      return true;
-    }
-  }
+function logout() {
+  console.log(localStorage.getItem("current_user"));
+  localStorage.setItem("current_user", "");
+  console.log(localStorage.getItem("current_user"));
 }

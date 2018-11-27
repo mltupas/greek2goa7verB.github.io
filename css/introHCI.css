@@ -5,11 +5,18 @@
 
 /* BODY CSS */
 body {
-		 background-image:  url("../images/geisellib.png");
+		 /*background-image:  url("../images/geisellib.png");*/
+		 background-color: #182B49;
 		 background-repeat: no-repeat;
 		 background-size: 100% 100%;
-     padding: 225px;
+     padding: 0px; /* NOTE: Causing elements to display lower than needed */
      text-align: center;
+		 color: white;
+}
+
+#backbtn {
+	display: inline-block;
+	text-align: right;
 }
 
 /* PROJECT CLASS CSS */
@@ -66,7 +73,7 @@ input[type=text]:focus, input[type=password]:focus {
 
 /* HR CSS */
 hr {
-  border: 3px solid #000000;
+  border: 2px solid: white;
   margin-bottom: 0px;
 }
 
@@ -102,13 +109,15 @@ button:hover {
 
 /* Add padding to container elements */
 .container {
-	background-color: white;
+	background-color: transparent;
   padding: 0px;
 	padding-left: 0px;
 	padding-right: 0px;
-	border-style: groove;
-	border-color: black;
-  border-width: 2px;
+	/* border-style: groove; */
+	border-color: white;
+	border-width: auto;
+	box-sizing: border-box;
+  border-width: 1px;
 }
 
 /* Clear floats */
@@ -337,8 +346,41 @@ i {
 #main {
     transition: margin-left .5s;
     padding: 1px;
+		text-align: left;
 }
 
+#explore a {
+	color: yellow;
+}
+
+#explore a:active {
+	color: orange;
+}
+
+#frat_2 {
+	display: inline-table;
+	width: 20%;
+	border-radius:  30px;
+	padding: 20px;
+}
+
+#frat_1 {
+	display: inline-table;
+	width: 20%;
+	border-radius: 30px;
+}
+
+#temp {
+	padding: 20px;
+	border-spacing: 20px;
+}
+#temp a {
+	color: yellow;
+}
+
+#temp a:active {
+	color: orange;
+}
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
     .sidebar {padding-top: 15px;}
@@ -354,5 +396,12 @@ table {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-	background-color: white;
+	background-color: transparent;
+
+}
+
+#event_header {
+	font-weight: bold;
+	font-size: 20px;
+	text-decoration: underline;
 }

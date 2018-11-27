@@ -5,6 +5,7 @@
 
 #logo img {
 	width: 100%;
+	background-color: white;
 }
 
 #boxes {
@@ -16,12 +17,18 @@
 	height: 100%;
 	max-height: 300px;
 	width: auto;
+	background-color: white;
 }
 
 #boxes .arrow {
 	height: auto;
 	width: 10%;
 	padding: 100px 0;
+	background-color: white;
+}
+
+body {
+	background-color: #182B49;
 }
 
 input[type=text], input[type=password] {
@@ -49,18 +56,24 @@ button:hover {
 
 .login {
 	border-style: groove;
-	border-color: black;
-	border-width: 5px;
+	border-color: white;
+	border-width: 1px;
   padding: 16px;
 	height: auto;
 	width: 30%;
 	margin: 0 auto;
 }
 
-.login .links #createaccount {
+.login {
+	color: white;
+}
+
+.login .links a {
 	float: left;
+	color: white;
 }
 
 .login .links #forgotpassword {
   float: right;
+	color: white;
 }
